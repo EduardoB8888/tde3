@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs em Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>APIs em Javascript</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="category-container">
+            <h2>Escolha sua API:</h2>
+            <div class="category-grid">
+                <div class="category-item" id="adviceCategory">
+                    <h3>Conselho do Dia</h3>
+                    <p>Clique aqui e gere seu conselho</p>
+                </div>
+                <div class="category-item" id="questionCategory">
+                    <h3>Pergunta</h3>
+                    <p>Clique aqui e gere sua pergunta</p>
+                </div>
+                <div class="category-item">
+                    <h3>Humor</h3>
+                    <p>"API sem funcionamento"</p>
+                    <p>Volte em Breve :)</p>
+                </div>
+                <div class="category-item">
+                    <h3>Motivação</h3>
+                    <p>"API fora de área"</p>
+                    <p>Volte mais Tarde :)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="advice-container">
+            <h2>Conselho do Dia</h2>
+            <br>
+            <p id="advice"></p>
+            <button id="getAdviceBtn">Obter Conselho</button>
+        </div>
+
+        <div class="question-container">
+            <h2>Responda com verdadeiro ou falso a seguinte questão:</h2>
+            <br>
+            <p id="question"></p>
+            <br>
+            <p id="answer" class="answer"></p>
+            <button id="getQuestionBtn" class="getBtn">Obter Pergunta</button>
+            <div class="answerBtns">
+                <button id="trueBtn" style="display: none;">Verdadeiro</button>
+                <button id="falseBtn" style="display: none;">Falso</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gerador De Frases. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
